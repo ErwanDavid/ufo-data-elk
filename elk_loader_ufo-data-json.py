@@ -54,9 +54,12 @@ def curate_date(object_in):
         try :
             date_obj = datetime.strptime(object_in['date'], date_format)
         except ValueError:
-            date_obj = datetime.strptime("01/01/1010", '%m/%d/%Y')
+            date_obj = datetime.strptime("01/01/0001", '%m/%d/%Y')
         object_out['calc_date'] = date_obj
-        object_out['calc_year'] = object_in['date'].split('/')[-1]
+        try:
+            object_out['calc_year'] = object_in['date'].split('/')[-1]
+        except:
+            object_out['calc_year'] = 1
     return object_out
 
 def create_index():
@@ -84,12 +87,11 @@ def load_json(file):
             except:
                 print("Error inserting" + file_str)
     except:
-        print("Error parsing")
+        print("Error parsing file")
 
 create_index()
 
-files = Path('./bin/').glob('*json')
-#files = ''
+files = Path('./data/bin/').glob('*json')
 for file in files :
     print(file)
     load_json(file)
