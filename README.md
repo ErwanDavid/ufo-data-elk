@@ -6,9 +6,9 @@ Use elasticsearch stack to store, enrich &amp; visualise UFO data
 
 Centralise different source of UFO / UAP in the elastic stack to be able to enrich and visualise these data!
 
+See here a big map with color per UFO shape
+
 ![UFO report map](ressources/ufo_map2.png "UFO map")
-
-
 
 
 ## Prerequesites :
@@ -54,3 +54,10 @@ https://medium.com/@psajan106/elasticsearch-8-named-entity-recognition-ner-using
 > nohup python ./elk_loader_ufo-csv.py ./data/ufo-complete-geocoded-time-standardized.csv  > load-csv-01.log &
 
 
+Link shape / period : raise og lights ?
+
+![UFO report map](ressources/ufo_shape-date.png "UFO map")
+
+UFO in france peak in 1954
+
+![UFO report map](ressources/ufo_france.png "UFO map")
