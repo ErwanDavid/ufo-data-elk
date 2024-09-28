@@ -20,17 +20,17 @@ See here a big map with color per UFO shape
 
 ### venv
 
-> python -m venv ./venv
-> source ./venv/bin/activate
-> pip install stop-words
-> pip install geopy
-> pip install elasticsearch
+    python -m venv ./venv
+    source ./venv/bin/activate
+    pip install stop-words
+    pip install geopy
+    pip install elasticsearch
 
 
 ### bert NER for elk
 
-> pip install eland
-> pip install 'eland[pytorch]'
+    pip install eland
+    pip install 'eland[pytorch]'
 
 
 
@@ -39,25 +39,28 @@ https://medium.com/@psajan106/elasticsearch-8-named-entity-recognition-ner-using
 
 ### get data from differents repo
 
-> mkdir data
-> cd data
-
-> wget https://raw.githubusercontent.com/planetsig/ufo-reports/refs/heads/master/csv-data/ufo-complete-geocoded-time-standardized.csv
-
-> git clone https://github.com/richgel999/ufo_data
+#### Old nuforc data ? also available on kaggle. 
+	mkdir data
+	cd data
+	wget https://raw.githubusercontent.com/planetsig/ufo-reports/refs/heads/master/csv-data/ufo-complete-geocoded-time-standardized.csv
+	
+#### richgel999 repo
+    git clone https://github.com/richgel999/ufo_data
 
 
 ## Usage
 
 ### Load ufo-complete-geocoded-time-standardized.csv
 
-> nohup python ./elk_loader_ufo-csv.py ./data/ufo-complete-geocoded-time-standardized.csv  > load-csv-01.log &
+	nohup python ./elk_loader_ufo-csv.py ./data/ufo-complete-geocoded-time-standardized.csv  > load-csv-01.log &
 
 
-Link shape / period : raise og lights ?
+## Visualisation
+
+### Link shape / period : raise og lights ?
 
 ![UFO report map](ressources/ufo_shape-date.png "UFO map")
 
-UFO in france peak in 1954
+### UFO in france peak in 1954
 
 ![UFO report map](ressources/ufo_france.png "UFO map")
