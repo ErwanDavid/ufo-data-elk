@@ -25,6 +25,11 @@ See here a big map with color per UFO shape
     pip install stop-words
     pip install geopy
     pip install elasticsearch
+    pip install spacy
+    pip install Openpyxl
+
+
+    python -m spacy download en_core_web_sm
 
 
 ### bert NER for elk
