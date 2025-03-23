@@ -58,7 +58,7 @@ https://medium.com/@psajan106/elasticsearch-8-named-entity-recognition-ner-using
 
 ### get data from differents repo
 
-#### Old nuforc data ? also available on kaggle here : .
+#### Old nuforc data ? also available on kaggle here : https://www.kaggle.com/datasets/NUFORC/ufo-sightings
 
 ```sh
 mkdir data
