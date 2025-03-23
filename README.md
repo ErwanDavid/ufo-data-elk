@@ -1,4 +1,6 @@
-am# Playing with Elastic & Kibana with UAP (UFO) data
+# UFO data to Elastic Stack
+
+Playing with Elastic & Kibana with UAP (UFO) data
 Use elasticsearch stack to store, visualise and enrich UAP (aka UFO) data
 
 
@@ -12,8 +14,8 @@ See other interesting visualisation at the end of the page
 ## Data
 > [IMPORTANT]
 > Data in screenshots are more accurate then the freely available ones linked below. 
-> They are used for ilustrations with courtesy of NUFORC (see : https://nuforc.org/terms/ )
-> NONE of these data are shared into this repository - only visualisations
+> They are used for illustrations with courtesy of NUFORC (see : https://nuforc.org/terms/ )
+> NONE of these data are shared into this repository - only thru visualisations
 
 ## Prerequesites :
 ### Install elasticsearch stack elk : 
