@@ -3,9 +3,10 @@ import pprint as pp
 from elasticsearch import Elasticsearch
 import ufodata as ud
 
+# data/ufo-complete-geocoded-time-standardized.csv
 
 client = Elasticsearch("http://localhost:9200",  basic_auth=("elastic", 'changeme'))
-index_name = "ufo-noforc-2013"
+index_name = "ufo-data-all"
 
 COLNAME = ['date','city','state','country','shape','duration_int','duration','desc','date_report','geo_lat','geo_long']
 
@@ -23,7 +24,7 @@ def get_csv_array(file):
                 object_out[COLNAME[i]] = rows[i]
             array_out.append(object_out)
     return array_out
-    
+
 def curate_location(object_in):
     object_out = object_in
     object_out['location'] = f"{object_in['city']} {object_in['state']} {object_in['country']}" 

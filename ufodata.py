@@ -30,6 +30,20 @@ def create_index(client, index_name):
       } }}}
     client.indices.create(index=index_name, body=mappings)
 
+def curate_hour(hour):
+    if hour < 6:
+        return 'night'
+    elif hour < 12:
+        return 'morning'
+    elif hour < 19:
+        return 'afternoon'
+    elif hour < 23:
+        return 'evening'
+    else:
+        return 'evening'
+    
+
+
 def curate_date(object_in, date_str):
     object_out = object_in
     if date_str in object_in.keys() and object_in[date_str] :
@@ -52,8 +66,10 @@ def curate_date(object_in, date_str):
         except ValueError:
             date_obj = datetime.strptime("01/01/0001", '%m/%d/%Y')
         object_out['calc_date'] = date_obj
+        object_out['calc_hour'] = date_obj.hour
         try:
             object_out['calc_year'] = object_in[date_str].split('/')[-1]
         except:
             object_out['calc_year'] = 1
+        object_out['calc_moment'] = curate_hour(int(object_out['calc_hour']))
     return object_out
