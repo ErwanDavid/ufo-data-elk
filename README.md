@@ -12,8 +12,8 @@ See other interesting visualisation at the end of the page
 ## Data
 > [IMPORTANT]
 > Data in screenshots are more accurate then the freely available ones linked below. 
-> They are reproduced with courtesy of NUFORC (see : https://nuforc.org/terms/ )
-
+> They are used for ilustrations with courtesy of NUFORC (see : https://nuforc.org/terms/ )
+> NONE of these data are shared into this repository - only visualisations
 
 ## Prerequesites :
 ### Install elasticsearch stack elk : 
