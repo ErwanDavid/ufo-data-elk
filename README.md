@@ -1,4 +1,4 @@
-# Playing with Elastic & Kibana with UAP (UFO) data
+am# Playing with Elastic & Kibana with UAP (UFO) data
 Use elasticsearch stack to store, visualise and enrich UAP (aka UFO) data
 
 
@@ -52,7 +52,7 @@ pip install eland
 pip install 'eland[pytorch]'
 ```
 
-
+Example that could be used : 
 https://medium.com/@psajan106/elasticsearch-8-named-entity-recognition-ner-using-inference-ingest-pipeline-8e7bd566c5e8
 
 
